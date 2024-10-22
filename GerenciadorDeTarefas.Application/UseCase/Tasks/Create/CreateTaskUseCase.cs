@@ -5,9 +5,9 @@ namespace GerenciadorDeTarefas.Application.UseCase.Tasks.Create;
 
 public class CreateTaskUseCase
 {
-    public ResponseRegisteredTaskJson Execute(RequestRegisterTaskJson request)
+    public ResponseRegisteredTaskJson Execute(RequestTaskJson request)
     {
-        RequestRegisterTaskJson task = new RequestRegisterTaskJson
+        RequestTaskJson task = new RequestTaskJson
         {
             Name = request.Name,
             Description = request.Description,
